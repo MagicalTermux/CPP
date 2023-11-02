@@ -1,0 +1,75 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	
+	char n;
+	
+	int angka, i, total;
+		i = 0;
+		total = 0;
+	
+	
+	float rata;
+
+    cout << "Input variabel yang anda inginkan (X, Y, Z) : ";
+	cin >> n;
+    
+    switch (n)
+    {
+	
+    
+    case  'X' :
+    
+	cout << "Input angka : " << endl;
+    cin >> angka;
+    while(angka != -999){
+	
+	if(angka %2 != 0){
+	   total = total + angka;
+	   i = i + 1;
+	}
+	
+	cin >> angka;
+    }
+	
+	break;
+	
+	case 'Y' :
+	cout << "Input angka : " << endl;	
+	cin >> angka;
+	while(angka != -999){
+		
+	if(angka %2 == 0){
+	   total = total + angka;
+	   i = i + 1;	
+    }
+    
+    cin >> angka;
+    }
+    
+    break;
+    
+    case 'Z' :
+    cout << "Input angka : " << endl;	
+    cin >> angka;
+	while(angka != -999){
+		total = total + angka;
+	    i = i + 1;
+		cin >> angka;
+    }
+	
+	break;
+	
+	default :
+		
+	cout << "Cek lagi apa yg di-input wahai manusia.";
+
+}
+    if(i > 0){
+	
+    rata = (float)total/i;
+    cout << rata << endl;
+    }
+
+}
