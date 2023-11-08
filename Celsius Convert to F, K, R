@@ -1,0 +1,108 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	
+    int jawab, konversi, celsius;
+    char ulang;
+   
+	
+	cout << "_______________________________________________" << endl << endl;
+	cout << "SELAMAT DATANG DI PROGRAM KONVERSI SUHU CELSIUS" << endl;
+	cout << "_______________________________________________" << endl << endl;
+	
+	cout << "Pilihlah nomer : " << endl;
+	cout << "1. Masuk ke menu " << endl;
+	cout << "2. Keluar" << endl << endl;
+	cout << "jawab : ";
+	cin  >> jawab;
+	cout << "" << endl;
+	
+	if(jawab == 1){
+		do{
+			
+        cout << "Celsius ==> (Fahrenheit, Kelvin, Reamur)" << endl;
+        cout << "Pilihlah jenis konversi :" << endl;
+        cout << "1. Fahrenheit" << endl;
+        cout << "2. Kelvin" << endl;
+        cout << "3. Reamur" << endl << endl;
+        cout << "jawab : ";
+		cin  >> konversi;
+		cout << "" << endl;
+        
+        float hasil;
+        switch (konversi){
+        	
+        	case 1:
+        		cout << "C to F" << endl;
+        		cout << "------" << endl;
+        		cout << "Input nilai Celsius : ";
+        		cin  >> celsius;
+        		hasil = (9.0/5.0 * celsius) + 32;
+				cout << "Hasil konversi ke Fahrenheit adalah : ";
+				cout << hasil; 
+				cout << "" << endl;
+				
+				break;
+		
+			case 2:    
+				cout << "C to K" << endl;
+        		cout << "------" << endl;
+        		cout << "Input nilai Celsius : ";
+        		cin  >> celsius;
+        	    hasil = celsius + 273.15;
+				cout << "Hasil konversi ke Kelvin adalah : ";
+				cout << hasil; 
+				cout << "" << endl;
+				
+				break;
+				
+			case 3:    
+				cout << "C to R" << endl;
+        		cout << "------" << endl;
+        		cout << "Input nilai Celsius : ";
+        		cin  >> celsius;
+        		hasil = (4.0/5.0) * celsius;
+				cout << "Hasil konversi ke Reamur adalah : "; 
+				cout << hasil; 
+				cout << "" << endl;
+				
+				break;	
+				
+			default:
+				cout << "Pilihan tidak ada di menu";
+				
+				break;	
+		
+		}
+		
+		
+	
+		cout << "" << endl;
+		cout << "Apakah anda ingin mengulang program (Y/N)?" << endl;
+		cout << "jawab : ";
+		cin >> ulang;
+		cout << "" << endl;
+		
+		
+	    }while(ulang == 'Y' || ulang == 'y' );
+	    
+	    	if(ulang == 'N'){
+	    		cout << "Program berhenti, terimakasih.";
+			}0
+			else if(ulang != 'N'){
+			   cout << "Input salah, programmer bingung :)";
+		}
+	    
+	   
+	    
+
+		
+        }else if(jawab == 2){
+			cout << "Terimakasih, semoga hari-mu menyenangkan.";
+	    }
+	
+	    else{
+	    	cout << "Mohon perhatikan apa yang anda input kembali.";
+		}
+}
