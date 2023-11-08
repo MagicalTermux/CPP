@@ -46,11 +46,11 @@ int main(){
 				break;
 		
 			case 2:    
-				cout << "C to K" << endl;
+		        cout << "C to K" << endl;
         		cout << "------" << endl;
         		cout << "Input nilai Celsius : ";
         		cin  >> celsius;
-        	    hasil = celsius + 273.15;
+        	        hasil = celsius + 273.15;
 				cout << "Hasil konversi ke Kelvin adalah : ";
 				cout << hasil; 
 				cout << "" << endl;
@@ -58,7 +58,7 @@ int main(){
 				break;
 				
 			case 3:    
-				cout << "C to R" << endl;
+			cout << "C to R" << endl;
         		cout << "------" << endl;
         		cout << "Input nilai Celsius : ";
         		cin  >> celsius;
@@ -89,7 +89,7 @@ int main(){
 	    
 	    	if(ulang == 'N'){
 	    		cout << "Program berhenti, terimakasih.";
-			}0
+			}
 			else if(ulang != 'N'){
 			   cout << "Input salah, programmer bingung :)";
 		}
