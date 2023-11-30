@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	int n;
+	cin >> n;
+	
+string aku[4], seorang[4];
+int badut[4];
+
+aku[0] = "Parel";
+aku[1] = "Anton";
+aku[2] = "Jamal";
+aku[3] = "Mamat";
+
+seorang[0] = "Indonesia";
+seorang[1] = "Jerman";
+seorang[2] = "Italia";
+seorang[3] = "Montenegro";
+
+badut[0] = 999;
+badut[1] = 234;
+badut [2] = 696;
+badut[3] = 777;
+
+
+for(int i = 0; i < n; i++){
+
+	cout << "Nama : " << aku[i] << endl;
+	cout << "Negara : " << seorang[i] << endl;
+	cout << "Nomor ID : " << badut[i] << endl;
+	cout << endl;
+}
+
+return 0;
+}
