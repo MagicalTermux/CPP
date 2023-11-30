@@ -3,7 +3,10 @@ using namespace std;
 
 int main(){
 	int n;
+	cout << "masukkan nilai (1-4) : ";
 	cin >> n;
+
+
 	
 string aku[4], seorang[4];
 int badut[4];
@@ -23,13 +26,20 @@ badut[1] = 234;
 badut [2] = 696;
 badut[3] = 777;
 
+if(n <= 4){
 
 for(int i = 0; i < n; i++){
 
+	
 	cout << "Nama : " << aku[i] << endl;
 	cout << "Negara : " << seorang[i] << endl;
 	cout << "Nomor ID : " << badut[i] << endl;
 	cout << endl;
+  }
+}
+
+else if(n > 4){
+	cout << "salah input";
 }
 
 return 0;
