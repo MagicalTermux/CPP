@@ -1,0 +1,65 @@
+#include <iostream>
+using namespace std;
+
+//sub program tanpa nilai balik (return)
+//befungsi untuk mewakili bagian atas dari pola 
+void atas(int a){
+		//untuk mengatur ketinggian serta baris dari pola
+		for(int i=1; i<=a; i++){
+		//untuk mengatur kolom dan mencetak simbol "#"	
+		for(int j=1; j<=i; j++){
+			cout << "#";
+		}
+	 cout << endl;	
+	}
+	
+}
+
+//befungsi untuk mewakili bagian tengah dari pola 
+void tengah(int b){
+		
+		//untuk mengatur ketinggian serta baris dari pola dan mencetak simbol "#"
+		for(int i=1; i<=b; i++){
+		cout << "#";
+		//untuk mengatur kolom dan mencetak simbol "#"	
+		for(int j=1; j<=b-1; j++){
+		cout << "#";
+		}
+	 cout << endl;	
+	}
+}
+
+//befungsi untuk mewakili bagian bawah dari pola 
+void bawah(int c){
+		
+		//untuk mengatur ketinggian serta baris dari pola dan mencetak simbol "#"
+		for(int i=1; i<=c; i++){
+		//mencetak spasi sehingga pola yang dihasilkan menciptakan segitiga terbalik	
+		for(int j=1; j<i; j++){
+			cout << " ";	
+		}
+		//untuk mengatur kolom dan mencetak simbol "#"
+		for(int j=i ; j<=c; j++){
+			cout << "#";
+		}
+			cout << endl;
+	}
+	
+}
+
+int main(){
+	
+	//deklarasi variabel n
+	int n;
+	//input dari user untuk nilai yang akan dihasilkan
+	cin >> n;
+	
+	//berfungsi untuk memanggil sub program yang telah dibuat 
+	atas(n);
+	tengah(n);
+    bawah(n);
+    
+    //mengembalikan nilai program ke 0 sebagai tanda program berjalan dengan lancar
+    return 0;
+
+}
