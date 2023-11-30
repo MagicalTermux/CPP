@@ -48,18 +48,19 @@ void bawah(int c){
 }
 
 int main(){
-	
 	//deklarasi variabel n
 	int n;
+	
+	cout << "==========================" << endl;
+	cout << "PROGRAM POLA JAJAR GENJANG" << endl;
+	cout << "==========================" << endl << endl;
 	//input dari user untuk nilai yang akan dihasilkan
 	cin >> n;
-	
+	cout << endl;
 	//berfungsi untuk memanggil sub program yang telah dibuat 
 	atas(n);
 	tengah(n);
     bawah(n);
-    
     //mengembalikan nilai program ke 0 sebagai tanda program berjalan dengan lancar
     return 0;
-
 }
